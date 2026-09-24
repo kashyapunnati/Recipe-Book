@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background: #7c3aed;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+section {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #4c1d95;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #374151;
+    margin: 18px 0 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #7c3aed;
+}
+
+button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #7c3aed;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 5px 5px 0;
+}
+
+button:hover {
+    background: #6d28d9;
+}
+
+.recipe-card {
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.recipe-card h3 {
+    margin-top: 0;
+    color: #6d28d9;
+}
+
+.recipe-category {
+    display: inline-block;
+    background: #ede9fe;
+    color: #5b21b6;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.edit-btn {
+    background: #2563eb;
+}
+
+.edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+.view-btn {
+    background: #059669;
+}
+
+.view-btn:hover {
+    background: #047857;
+}
+
+.recipe-details {
+    border-left: 5px solid #7c3aed;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipe Book</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍴 My Recipe Book</h1>
+
+        <section class="recipe-form">
+            <h2>Add a Recipe</h2>
+
+            <input
+                type="text"
+                id="recipeName"
+                placeholder="Recipe name"
+            >
+
+            <select id="recipeCategory">
+                <option value="">Select Category</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Snacks">Snacks</option>
+            </select>
+
+            <textarea
+                id="ingredients"
+                placeholder="Enter ingredients"
+            ></textarea>
+
+            <textarea
+                id="instructions"
+                placeholder="Enter cooking instructions"
+            ></textarea>
+
+            <button id="saveRecipeBtn">Add Recipe</button>
+        </section>
+
+        <section class="filter-section">
+
+            <h2>My Recipes</h2>
+
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Snacks">Snacks</option>
+            </select>
+
+        </section>
+
+        <section class="recipe-list-section">
+
+            <div id="recipeList">
+                <p>No recipes added yet.</p>
+            </div>
+
+        </section>
+
+        <section
+            id="recipeDetails"
+            class="recipe-details"
+            style="display: none;"
+        >
+
+            <h2 id="detailName"></h2>
+
+            <p>
+                <strong>Category:</strong>
+                <span id="detailCategory"></span>
+            </p>
+
+            <h3>Ingredients</h3>
+            <p id="detailIngredients"></p>
+
+            <h3>Instructions</h3>
+            <p id="detailInstructions"></p>
+
+            <button id="closeDetailsBtn">
+                Close
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
